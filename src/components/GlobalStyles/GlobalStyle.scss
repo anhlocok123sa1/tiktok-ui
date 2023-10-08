@@ -3,9 +3,16 @@
 
 :root {
     --primary: #ff3b5c;
+    --black: rgb(22 24 35);
+
+    // Default Layout
+    --default-layout-header-height: 60px;
+    --default-layout-width: 100%;
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -18,4 +25,22 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+    color: var(--black);
+}
+
+button,
+input,
+[tabindex] {
+    border: none;
+    outline: none;
+}
+
+a[href] {
+    text-decoration: none;
+    color: var(--black);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
 }
