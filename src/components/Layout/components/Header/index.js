@@ -1,13 +1,16 @@
-import classNames from 'classnames/bind';
-import Tippy from '@tippyjs/react';
+import Search from '../Search';
 import 'tippy.js/dist/tippy.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
-
-import Button from '@/components/Button';
+import { Link } from 'react-router-dom';
+import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
-import Menu from '@/components/Popper/Menu';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import routesConfig from '@/config/routes';
+import Tippy from '@tippyjs/react';
 import Image from '@/components/Image';
+import Button from '@/components/Button';
+import Menu from '@/components/Popper/Menu';
+import { faPlus, faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 import {
     CoinIcon,
     CreationIcon,
@@ -24,7 +27,6 @@ import {
     UserIcon,
     ViewmodeIcon,
 } from '@/components/Icons';
-import Search from '../Search';
 
 const cx = classNames.bind(styles);
 
@@ -113,9 +115,9 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <div className={cx('logo')}>
+                <Link to={routesConfig.home} className={cx('logo')}>
                     <LogoIcon />
-                </div>
+                </Link>
 
                 {/* Search */}
                 <Search />
@@ -151,7 +153,7 @@ function Header() {
                             <Image
                                 className={cx('user-avatar')}
                                 alt="Loc Le"
-                                src="https://p16-sign-sg.tiktokcdn.com/aweme/720x720/tiktok-obj/6972005358390738946.jpeg?x-expires=1697194800&x-signature=jNX9K%2BmRPHc5LWfdUduMun43RBw%3D"
+                                src="https://p16-sign-sg.tiktokcdn.com/aweme/720x720/tiktok-obj/6972005358390738946.jpeg?x-expires=1697454000&x-signature=%2BdB9FHIS1j6riwvACLi0051b6C8%3D"
                                 fallback="https://yt3.ggpht.com/UsflU74uvka_3sejOu3LUGwzOhHJV0eIYoWcvOfkOre_c12uIN4ys-QqRlAkbusEmbZjTA-b=s48-c-k-c0x00ffffff-no-rj"
                             />
                         ) : (
