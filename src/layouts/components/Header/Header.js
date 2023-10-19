@@ -126,9 +126,7 @@ function Header() {
                     <Button text leftIcon={<FontAwesomeIcon icon={faPlus} />}>
                         Upload
                     </Button>
-                    <button className={cx('download-btn')}>
-                        <DownloadIcon />
-                    </button>
+
                     {currentUser ? (
                         <>
                             <Tippy content="Messages" placement="bottom" delay={100}>
@@ -148,6 +146,9 @@ function Header() {
                             <Button primary>Log in</Button>
                         </>
                     )}
+                    <button className={cx('download-btn')}>
+                        <DownloadIcon />
+                    </button>
                     <Menu items={currentUser ? USER_MENU : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
                             <Image
