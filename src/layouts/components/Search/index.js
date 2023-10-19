@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState, useEffect, useRef } from 'react';
 import classNames from 'classnames/bind';
 
-import * as searchService from '@/apiServices/searchService';
+import * as searchService from '@/services/searchService';
 import styles from './Search.module.scss';
 import { useDebounce } from '@/hooks';
 import AccoutItem from '@/components/AccountItem';

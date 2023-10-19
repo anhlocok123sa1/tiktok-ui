@@ -5,7 +5,7 @@ import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import routesConfig from '@/config/routes';
+import config from '@/config';
 import Tippy from '@tippyjs/react';
 import Image from '@/components/Image';
 import Button from '@/components/Button';
@@ -115,7 +115,7 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <Link to={routesConfig.home} className={cx('logo')}>
+                <Link to={config.routes.home} className={cx('logo')}>
                     <LogoIcon />
                 </Link>
 
@@ -153,7 +153,7 @@ function Header() {
                             <Image
                                 className={cx('user-avatar')}
                                 alt="Loc Le"
-                                src="https://p16-sign-sg.tiktokcdn.com/aweme/720x720/tiktok-obj/6972005358390738946.jpeg?x-expires=1697454000&x-signature=%2BdB9FHIS1j6riwvACLi0051b6C8%3D"
+                                src=""
                                 fallback="https://yt3.ggpht.com/UsflU74uvka_3sejOu3LUGwzOhHJV0eIYoWcvOfkOre_c12uIN4ys-QqRlAkbusEmbZjTA-b=s48-c-k-c0x00ffffff-no-rj"
                             />
                         ) : (
