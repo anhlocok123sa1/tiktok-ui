@@ -5,6 +5,7 @@ import Menu, { MenuItem } from './Menu';
 import {
     CompassIcon,
     CompassIconActive,
+    CreationEffectIcon,
     HomeIcon,
     HomeIconActive,
     LiveIcon,
@@ -12,6 +13,8 @@ import {
     UserGroupIcon,
     UserGroupIconActive,
 } from '@/components/Icons';
+import FollowingAccounts from '@/components/FollowingAccounts';
+import Button from '@/components/Button';
 
 const cx = classNames.bind(styles);
 
@@ -39,6 +42,12 @@ function Sidebar() {
                     iconActive={<LiveIconActive />}
                 />
             </Menu>
+            <FollowingAccounts label="Following accounts" />
+            <div className={cx('sidebar-footer')}>
+                <Button large className={cx('btn-create')} leftIcon={<CreationEffectIcon />}>
+                    <span>Create effects</span>
+                </Button>
+            </div>
         </aside>
     );
 }

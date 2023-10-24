@@ -2,3 +2,27 @@
     width: 240px;
     padding: 20px 0 26px 8px;
 }
+
+.sidebar-footer {
+    position: relative;
+    padding: 16px 0 0 8px;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 8px;
+        right: 8px;
+        height: 1px;
+        background-color: rgba(22, 24, 35, 0.12);
+    }
+}
+
+.btn-create {
+    height: 52px;
+    width: 208px;
+    background-image: url('https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/045b2fc7c278b9a30dd0.png');
+    background-position: center;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
