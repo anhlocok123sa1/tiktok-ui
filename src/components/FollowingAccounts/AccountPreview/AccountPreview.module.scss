@@ -1,0 +1,51 @@
+.wrapper {
+    width: 320px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.avatar {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.body {
+    color: var(--text-color);
+}
+
+.name {
+    font-size: 1.8rem;
+}
+
+.check {
+    color: #20d5ec;
+}
+
+.username {
+    font-size: 1.4rem;
+}
+
+.analytics {
+    margin-top: 12px;
+    font-size: 1.6rem;
+}
+
+.value {
+    font-size: 1.6rem;
+    ~ .value {
+        margin-left: 20px;
+    }
+}
+
+.label {
+    font-size: 1.6rem;
+    margin-left: 8px;
+}

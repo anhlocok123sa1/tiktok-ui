@@ -12,6 +12,12 @@ function FollowingAccounts({ label }) {
             <AccountItem />
             <AccountItem />
             <AccountItem />
+            <AccountItem />
+            <AccountItem />
+            <AccountItem />
+            <AccountItem />
+            <AccountItem />
+            <AccountItem />
 
             <p className={cx('see-more')}>See more</p>
         </div>
