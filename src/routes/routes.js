@@ -8,6 +8,7 @@ import Following from '@/pages/Following';
 import Profile from '@/pages/Profile';
 import Upload from '@/pages/Upload';
 import CreationLive from '@/pages/CreationLive';
+import Explore from '@/pages/Explore';
 
 // Public Routes
 const publicRoutes = [
@@ -15,7 +16,8 @@ const publicRoutes = [
     { path: config.routes.following, component: Following },
     { path: config.routes.profile, component: Profile },
     { path: config.routes.upload, component: Upload, layout: HeaderOnly },
-    { path: config.routes.creationlive, component: CreationLive, layout: null },
+    { path: config.routes.creationlive, component: CreationLive },
+    { path: config.routes.explore, component: Explore },
 ];
 
 const privateRoutes = [];
